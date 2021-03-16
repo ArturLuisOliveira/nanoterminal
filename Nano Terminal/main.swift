@@ -22,6 +22,7 @@ func shell(_ command: String) -> String {
     
     return output
 }
+
 //PC config
 //print(shell("system_profiler SPHardwareDataType"))
 

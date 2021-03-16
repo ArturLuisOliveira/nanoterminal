@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Talker {
+    static func talk(text: String) -> Void {
+        Shell.run("say \(text)")
+    }
+}
