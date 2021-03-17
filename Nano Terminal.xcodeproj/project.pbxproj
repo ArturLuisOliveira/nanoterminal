@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3498C769260290C10063D4A3 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498C768260290C10063D4A3 /* Input.swift */; };
 		34DFE04926012D0C007A75E8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFE04826012D0C007A75E8 /* main.swift */; };
 		34DFE05126013A2E007A75E8 /* Talker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFE05026013A2E007A75E8 /* Talker.swift */; };
 		34DFE05426013ACF007A75E8 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFE05326013ACF007A75E8 /* Shell.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3498C768260290C10063D4A3 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		34DFE04526012D0C007A75E8 /* Nano Terminal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Nano Terminal"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DFE04826012D0C007A75E8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		34DFE05026013A2E007A75E8 /* Talker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talker.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				34DFE05026013A2E007A75E8 /* Talker.swift */,
 				34DFE05326013ACF007A75E8 /* Shell.swift */,
 				34DFE05626013C3A007A75E8 /* Printer.swift */,
+				3498C768260290C10063D4A3 /* Input.swift */,
 			);
 			path = "Nano Terminal";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3498C769260290C10063D4A3 /* Input.swift in Sources */,
 				34DFE05726013C3A007A75E8 /* Printer.swift in Sources */,
 				34DFE05426013ACF007A75E8 /* Shell.swift in Sources */,
 				34DFE05126013A2E007A75E8 /* Talker.swift in Sources */,

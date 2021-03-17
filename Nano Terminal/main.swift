@@ -10,6 +10,16 @@ import Foundation
 
 // artur
 
+Printer.writeAndTalk("Type the string value:")
+let stringValue = Input.readString()
+
+
+Printer.writeAndTalk("Type double value:")
+let decimalValue = Input.readDecimal()
+
+Printer.writeAndTalk("Thank you for typing \(stringValue) and \(decimalValue)")
+
+
 // ----
 
 

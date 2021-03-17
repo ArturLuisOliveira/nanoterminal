@@ -8,7 +8,11 @@
 import Foundation
 
 struct Talker {
-    static func talk(text: String) -> Void {
+    static func talk(_ text: String) -> Void {
         Shell.run("say \"\(text)\"")
     }
+    static func talkMany(_ texts: [String]) -> Void {
+        texts.forEach{ text in Shell.run("say \"\(text)\"")}
+    }
+    
 }

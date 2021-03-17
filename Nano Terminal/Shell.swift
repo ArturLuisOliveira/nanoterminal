@@ -8,7 +8,7 @@
 import Foundation
 
 struct Shell {
-    static func run(_ command: String) -> String {
+    static func run(_ command: String) -> Void {
         let task = Process()
         let pipe = Pipe()
         
@@ -18,9 +18,7 @@ struct Shell {
         task.launchPath = "/bin/zsh"
         task.launch()
         
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output = String(data: data, encoding: .utf8)!
-        
-        return output
+        //let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        //let output = String(data: data, encoding: .utf8)!
     }
 }
