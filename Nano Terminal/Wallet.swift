@@ -37,11 +37,10 @@ struct Wallet{
     var investments: [InvestmentType:Decimal]
     //[tipo de investimento:quanto quer investir]
     func getGeneralPrevision(period: Int,investments: [InvestmentType:Decimal]) -> Decimal{
-        var nonInvestmentValue = value - investments.reduce(Decimal(0)){acumulator,current in acumulator + current.value}
+        let nonInvestedValue = value - investments.reduce(Decimal(0)){acumulator,current in acumulator + current.value}
         
-        let prevision = investments.map{investment in
-            (investment.key: investment.key.getPrevision(period: period, value: investment.value))}
+        let investedValuePrevision = investments.reduce(Decimal(0)){accumulator, investment in investment.key.getPrevision(period: period, value: investment.value)}
         
-        var previsionAll = nonInvestmentValue + prevision.reduce(Decimal(0)){acumulator,current in acumulator + current[1]}
+        return nonInvestedValue + investedValuePrevision
     }
 }
