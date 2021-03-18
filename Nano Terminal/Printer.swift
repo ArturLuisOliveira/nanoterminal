@@ -8,6 +8,8 @@
 import Foundation
 
 struct Printer {
+    let enableVoice: Bool
+    
     static func writeLine(_ text: String){
         print(text)
     }
@@ -16,9 +18,9 @@ struct Printer {
         lines.forEach{ line in Printer.writeLine(line) }
     }
     
-    static func writeAndTalk(_ text:String) {
-        writeLine(text)
-        Talker.talk(text)
+    func writeAndTalk(_ text:String) {
+        Printer.writeLine(text)
+        if(enableVoice) {Talker.talk(text)}
     }
 }
 

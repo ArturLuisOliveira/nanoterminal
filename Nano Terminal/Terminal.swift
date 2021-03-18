@@ -9,23 +9,23 @@ import Foundation
 
 struct Terminal {
     init() {
-        var investmentType: InvestmentType
-       
-        Printer.writeAndTalk("Welcome to LCI and CDB investment calculator. Please type the amount money you want to invest")
+        let printer = Printer(enableVoice: false)
+        
+        printer.writeAndTalk("Welcome to LCI and CDB investment calculator. Please type the amount money you want to invest")
         let value = Input.readDecimal()
         
         var investments:[InvestmentType: Decimal] = [:]
-        Printer.writeAndTalk("Please type the amount money you want to invest in LCI")
+        printer.writeAndTalk("Please type the amount money you want to invest in LCI")
         investments[InvestmentType.lci] = Input.readDecimal()
         
-        Printer.writeAndTalk("Please type the amount money you want to invest in CDB")
+        printer.writeAndTalk("Please type the amount money you want to invest in CDB")
         investments[InvestmentType.cdb] = Input.readDecimal()
         
-        Printer.writeAndTalk("Please type the duration of your investment in months.")
+        printer.writeAndTalk("Please type the duration of your investment in months.")
         let period = Input.readInteger()
         
         let wallet = Wallet(period: period, value: value, investments: investments)
         let profit = wallet.getGeneralPrevision()
-        Printer.writeAndTalk("The profit is \(profit) dolars")
+        printer.writeAndTalk("The profit is \(profit) dolars")
     }
 }
