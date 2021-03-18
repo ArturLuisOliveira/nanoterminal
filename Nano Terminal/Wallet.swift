@@ -13,6 +13,7 @@ struct Wallet{
     var investments: [InvestmentType:Decimal]
     let numberFormatter = NumberFormatter()
     
+    
     //[tipo de investimento:quanto quer investir]
     func getGeneralPrevision() -> String{
 
@@ -24,6 +25,7 @@ struct Wallet{
         
         let investNS = NSDecimalNumber(decimal:totalInvestments)
         
+        numberFormatter.numberStyle = .currency
         return numberFormatter.string(from: investNS) ?? ""
     }
 }
