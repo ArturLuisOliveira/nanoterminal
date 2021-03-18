@@ -24,10 +24,8 @@ enum InvestmentType{
         var aux: Decimal
         
         aux = value
-        print(aux)
         for _ in 1...period{
             aux = aux + (aux * Decimal(percentage/100))
-            print(aux)
         }
         return aux
     }
