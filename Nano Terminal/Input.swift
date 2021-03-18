@@ -31,4 +31,14 @@ struct Input {
             } else {  Printer.writeAndTalk("Invalid Input. Please insert a valid decimal number.") }
         }
     }
+    static func readInteger() -> Int {
+        var invalidInput = true
+        while invalidInput == true {
+            let input = Input.readString()
+            if let integer = Int(input) {
+                invalidInput = false
+                return integer
+            } else {  Printer.writeAndTalk("Invalid Input. Please insert a valid integer number.") }
+        }
+    }
 }

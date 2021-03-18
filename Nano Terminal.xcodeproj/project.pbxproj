@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		074D4FC32603C8D30055E73D /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D4FC22603C8D30055E73D /* Wallet.swift */; };
 		3498C769260290C10063D4A3 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498C768260290C10063D4A3 /* Input.swift */; };
+		3498C76D2603CB8B0063D4A3 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498C76C2603CB8B0063D4A3 /* Terminal.swift */; };
 		34DFE04926012D0C007A75E8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFE04826012D0C007A75E8 /* main.swift */; };
 		34DFE05126013A2E007A75E8 /* Talker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFE05026013A2E007A75E8 /* Talker.swift */; };
 		34DFE05426013ACF007A75E8 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFE05326013ACF007A75E8 /* Shell.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		074D4FC22603C8D30055E73D /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		3498C768260290C10063D4A3 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		3498C76C2603CB8B0063D4A3 /* Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
 		34DFE04526012D0C007A75E8 /* Nano Terminal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Nano Terminal"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DFE04826012D0C007A75E8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		34DFE05026013A2E007A75E8 /* Talker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talker.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				34DFE05626013C3A007A75E8 /* Printer.swift */,
 				3498C768260290C10063D4A3 /* Input.swift */,
 				074D4FC22603C8D30055E73D /* Wallet.swift */,
+				3498C76C2603CB8B0063D4A3 /* Terminal.swift */,
 			);
 			path = "Nano Terminal";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				34DFE05426013ACF007A75E8 /* Shell.swift in Sources */,
 				34DFE05126013A2E007A75E8 /* Talker.swift in Sources */,
 				34DFE04926012D0C007A75E8 /* main.swift in Sources */,
+				3498C76D2603CB8B0063D4A3 /* Terminal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
