@@ -17,7 +17,8 @@ struct Input {
                 invalidInput = false
                 return string!
             } else {
-                Printer.writeAndTalk("Invalid Input. Please insert a valid string.")
+                let printer = Printer(enableVoice: false)
+                printer.writeAndTalk("Invalid string input, please type again.")
             }
         }
     }
@@ -28,7 +29,10 @@ struct Input {
             if let decimal = Decimal(string: input) {
                 invalidInput = false
                 return decimal
-            } else {  Printer.writeAndTalk("Invalid Input. Please insert a valid decimal number.") }
+            } else {
+                let printer = Printer(enableVoice: false)
+                printer.writeAndTalk("Invalid decimal input, please type again.")
+            }
         }
     }
     static func readInteger() -> Int {
@@ -38,7 +42,10 @@ struct Input {
             if let integer = Int(input) {
                 invalidInput = false
                 return integer
-            } else {  Printer.writeAndTalk("Invalid Input. Please insert a valid integer number.") }
+            } else {
+                let printer = Printer(enableVoice: false)
+                printer.writeAndTalk("Invalid decimal input, please type again.")
+            }
         }
     }
 }

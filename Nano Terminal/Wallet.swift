@@ -15,6 +15,7 @@ struct Wallet{
     
     //[tipo de investimento:quanto quer investir]
     func getGeneralPrevision() -> String{
+
         let nonInvestedValue = value - investments.reduce(Decimal(0)){acumulator,current in acumulator + current.value}
         
         let investedValuePrevision = investments.reduce(Decimal(0)){accumulator, investment in investment.key.getPrevision(period: period, value: investment.value)}
