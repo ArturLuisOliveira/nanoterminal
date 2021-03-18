@@ -14,9 +14,9 @@ enum InvestmentType{
     var percentage: Double {
         switch self {
         case .lci:
-            return 0.2
+            return 0.2/12 //change to receave a value from user maybe
         case .cdb:
-            return 1.0
+            return 1.0/12 //change to receave a value from user maybe
         }
     }
     
