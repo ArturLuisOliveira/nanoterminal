@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		074D4FC32603C8D30055E73D /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D4FC22603C8D30055E73D /* Wallet.swift */; };
 		074D4FC62603DAAA0055E73D /* InvestmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D4FC52603DAAA0055E73D /* InvestmentType.swift */; };
+		343C0B40260633DD00BD0BB9 /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C0B3F260633DD00BD0BB9 /* Investment.swift */; };
 		3498C769260290C10063D4A3 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498C768260290C10063D4A3 /* Input.swift */; };
 		3498C76D2603CB8B0063D4A3 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498C76C2603CB8B0063D4A3 /* Terminal.swift */; };
 		34DFE04926012D0C007A75E8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFE04826012D0C007A75E8 /* main.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		074D4FC22603C8D30055E73D /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		074D4FC52603DAAA0055E73D /* InvestmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentType.swift; sourceTree = "<group>"; };
+		343C0B3F260633DD00BD0BB9 /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		3498C768260290C10063D4A3 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		3498C76C2603CB8B0063D4A3 /* Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
 		34DFE04526012D0C007A75E8 /* Nano Terminal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Nano Terminal"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				074D4FC22603C8D30055E73D /* Wallet.swift */,
 				3498C76C2603CB8B0063D4A3 /* Terminal.swift */,
 				074D4FC52603DAAA0055E73D /* InvestmentType.swift */,
+				343C0B3F260633DD00BD0BB9 /* Investment.swift */,
 			);
 			path = "Nano Terminal";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				074D4FC62603DAAA0055E73D /* InvestmentType.swift in Sources */,
 				3498C769260290C10063D4A3 /* Input.swift in Sources */,
 				34DFE05726013C3A007A75E8 /* Printer.swift in Sources */,
+				343C0B40260633DD00BD0BB9 /* Investment.swift in Sources */,
 				34DFE05426013ACF007A75E8 /* Shell.swift in Sources */,
 				34DFE05126013A2E007A75E8 /* Talker.swift in Sources */,
 				34DFE04926012D0C007A75E8 /* main.swift in Sources */,

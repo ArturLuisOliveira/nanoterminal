@@ -10,7 +10,7 @@ import Foundation
 struct Wallet{
     var period: Int
     var value: Decimal
-    var investments: [InvestmentType:Decimal]
+    var investments: [Investment]
     let numberFormatter = NumberFormatter()
     
     
@@ -19,7 +19,7 @@ struct Wallet{
 
         let nonInvestedValue = value - investments.reduce(Decimal(0)){acumulator,current in acumulator + current.value}
         
-        let investedValuePrevision = investments.reduce(Decimal(0)){accumulator, investment in accumulator + investment.key.getPrevision(period: period, value: investment.value)}
+        let investedValuePrevision = investments.reduce(Decimal(0)){accumulator, investment in accumulator + investment.getPrevision(period: period, value: investment.value)}
         
         let totalInvestments = nonInvestedValue + investedValuePrevision
         

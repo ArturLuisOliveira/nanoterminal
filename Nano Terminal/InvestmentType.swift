@@ -7,28 +7,15 @@
 
 import Foundation
 
-enum InvestmentType{
-    case lci
-    case cdb
+enum InvestmentType {
+    case lci, cdb
     
-    var percentage: Double {
+    var name: String {
         switch self {
-        case .lci:
-            return 0.2/12
         case .cdb:
-            return 1.0/12
+            return "CDB"
+        case .lci:
+            return "LCI"
         }
-    }
-    
-    func getPrevision(period: Int,value: Decimal) -> Decimal { //periodo = 0 tratar
-        var aux: Decimal
-        
-        aux = value
-        for _ in 1...period{
-            aux = aux + (aux * Decimal(percentage/100))
-            
-            //print(aux)
-        }
-        return aux
     }
 }
